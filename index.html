@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator Using JS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <button class="theme-toggle" title="Toggle dark mode" aria-label="Toggle dark mode">
+      <i class="fas fa-moon"></i>
+    </button>
+    <div class="pass_container">
+      <h2>Random Password Generator</h2>
+      <div class="input_container">
+        <div class="input_form">
+          <input
+            type="text"
+            placeholder="Create a Password"
+            readonly
+            class="input"
+          />
+          <i class="far fa-copy"></i>
+        </div>
+      </div>
+      <div class="options">
+        <div class="option length-option">
+          <label>Password Length: <span class="length-value">20</span></label>
+          <input type="range" min="6" max="20" value="20" class="Length" />
+        </div>
+        <div class="option">
+          <label>Includes Symbols:</label>
+          <input type="checkbox" checked class="symbols" />
+        </div>
+        <div class="option">
+          <label>Includes Numbers:</label>
+          <input type="checkbox" checked class="numbers" />
+        </div>
+        <div class="option">
+          <label>Includes lowercase letters:</label>
+          <input type="checkbox" checked class="lowercase" />
+        </div>
+        <div class="option">
+          <label>Includes uppercase letters:</label>
+          <input type="checkbox" checked class="uppercase" />
+        </div>
+      </div>
+      <div class="strength">
+        <span class="strength-title">Strength</span>
+        <div class="strength-right">
+          <span class="strength-text"></span>
+          <div class="strength-bars">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn">Generate</button>
+    </div>
+    <div class="alert_container">Password Copies</div>
+    <script src="script.js"></script>
+  </body>
+</html>
