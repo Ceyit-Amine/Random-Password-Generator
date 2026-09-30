@@ -1,4 +1,4 @@
-# Random Password Generator 
+# Random Password Generator
 
 Welcome to the **Password Generator** project! This is a lightweight, cross-platform web application built with HTML, CSS, and JavaScript that allows users to quickly generate strong, secure, and random passwords. 
 
